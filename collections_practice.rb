@@ -69,7 +69,7 @@ def add_s(array)
 
   array.collect do |word|
     if array.index(word) != 1
-      s_word = word.insert(-1, "s")
+      word.insert(-1, "s")
     end
   end
 end
