@@ -73,7 +73,7 @@ def add_s(array)
   #   end
   # end
 
-  [array].each_with_index.collect {|word, index| "s"}
+  [array].each_with_index.collect {|word, index| word}
 end
 
 #binding.pry
