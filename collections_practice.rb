@@ -58,9 +58,12 @@ def find_a(string)
 end
 
 def sum_array(array)
-    sum = 0
-    array.each {|num| sum += num}
-    sum
+    # sum = 0
+    # array.each {|num| sum += num}
+    # sum
+    
+
+    
 end
 
 
