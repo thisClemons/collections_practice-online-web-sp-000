@@ -73,7 +73,7 @@ def add_s(array)
   #   end
   # end
 
-  [array].each_with_index.collect {|word, index| index == 1? word : word.insert(-1, "s")}
+  array.each_with_index.collect {|word, index| index == 1? word : word.insert(-1, "s")}
 end
 
 #binding.pry
