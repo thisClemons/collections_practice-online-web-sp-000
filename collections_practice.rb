@@ -66,12 +66,14 @@ def sum_array(array)
 end
 
 def add_s(array)
+  # array.collect do |word|
+  #   if array.index(word) != 1
+  #     word.insert(-1, "s")
+  #   else word
+  #   end
+  # end
 
-  array.collect do |word|
-    if array.index(word) != 1
-      word.insert(-1, "s")
-    else word
-    end
+  [array].each_with_index.collect {|element, index| index == 1? word : word.insert(-1, "s")}
   end
 end
 
