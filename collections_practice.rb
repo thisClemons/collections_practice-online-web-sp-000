@@ -66,8 +66,9 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.collect_with_index do |word, index|
-    if index != 1
+
+  array.collect do |word|
+    if array.index(word) != 1
       s_word = word.insert(-1, "s")
     end
   end
