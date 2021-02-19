@@ -74,7 +74,6 @@ def add_s(array)
   # end
 
   [array].each_with_index.collect {|element, index| index == 1? word : word.insert(-1, "s")}
-  end
 end
 
 #binding.pry
